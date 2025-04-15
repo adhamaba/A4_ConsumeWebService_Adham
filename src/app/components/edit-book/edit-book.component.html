@@ -1,1 +1,26 @@
-<p>edit-book works!</p>
+<div class="container mt-4">
+    <h2>Edit Book</h2>
+  
+    <div class="form-group mb-2">
+      <label>Title</label>
+      <input [(ngModel)]="book.title" class="form-control" />
+    </div>
+  
+    <div class="form-group mb-2">
+      <label>Author</label>
+      <input [(ngModel)]="book.authorName" class="form-control" />
+    </div>
+  
+    <div class="form-group mb-2">
+      <label>Price</label>
+      <input [(ngModel)]="book.price" type="number" class="form-control" />
+    </div>
+  
+    <div class="form-group mb-3">
+      <label>Quantity</label>
+      <input [(ngModel)]="book.quantity" type="number" class="form-control" />
+    </div>
+  
+    <button (click)="updateBook()" class="btn btn-primary">Save Changes</button>
+  </div>
+  
