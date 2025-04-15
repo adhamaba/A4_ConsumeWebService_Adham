@@ -3,7 +3,7 @@ import { provideRouter } from '@angular/router';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { provideHttpClient } from '@angular/common/http';
 import { provideAnimations } from '@angular/platform-browser/animations';
-import { provideForms } from '@angular/forms'; // ✅ Don't forget this!
+import { provideForms } from '@angular/forms'; 
 
 import { routes } from './app.routes';
 

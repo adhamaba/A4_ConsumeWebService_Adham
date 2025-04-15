@@ -4,7 +4,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-book-list',
-  templateUrl: './book-list.component.html'
+  templateUrl: './book-list.component.html',
+  
 })
 export class BookListComponent implements OnInit {
   books: Book[] = [];
