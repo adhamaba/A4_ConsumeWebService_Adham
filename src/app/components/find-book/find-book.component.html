@@ -1,1 +1,32 @@
-<p>find-book works!</p>
+<div class="container mt-4">
+    <h2>Find Book by Title</h2>
+  
+    <div class="form-group mb-3">
+      <input [(ngModel)]="searchTitle" placeholder="Enter title..." class="form-control" />
+    </div>
+  
+    <button (click)="search()" class="btn btn-primary mb-3">Search</button>
+    <p class="text-danger">{{ message }}</p>
+  
+    <table class="table table-bordered" *ngIf="results.length > 0">
+      <thead class="table-dark">
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of results">
+          <td>{{ book.id }}</td>
+          <td>{{ book.title }}</td>
+          <td>{{ book.authorName }}</td>
+          <td>{{ book.price }}</td>
+          <td>{{ book.quantity }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
